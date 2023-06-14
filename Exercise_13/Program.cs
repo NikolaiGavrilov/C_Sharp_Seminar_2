@@ -13,7 +13,11 @@ if (yourNum > 99 || yourNum < -99)
         yourNum = yourNum / 10;
     }
     thirdDigit = yourNum % 10;
-    Console.WriteLine ("Третья цифра числа - " + thirdDigit);
+    if (thirdDigit < 0)
+    {
+        thirdDigit = thirdDigit * (-1);
+    }
+    Console.WriteLine ("Третья цифра числа: " + thirdDigit);
 }
 else
 {
